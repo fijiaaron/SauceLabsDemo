@@ -29,7 +29,7 @@ public class ApplitoolsTest
     @Before
     public void setup() throws MalformedURLException
     {
-        TEST_NAME += testName.getMethodName();
+        TEST_NAME += " " + testName.getMethodName();
         URL url = new URL(SAUCE_URL);
         Capabilities capabilities = getSauceCapabilities("chrome");
         driver = new RemoteWebDriver(url, capabilities);
@@ -51,7 +51,7 @@ public class ApplitoolsTest
         System.out.println(driver.getTitle());
     }
 
-    protected Capabilities getSauceCapabilities(String browserName) throws MalformedURLException
+    protected Capabilities getSauceCapabilities(String browserName)
     {
         MutableCapabilities capabilities = new MutableCapabilities();
 
