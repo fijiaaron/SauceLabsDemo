@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class ApplitoolsTest
+public class SauceLabsTest
 {
     WebDriver driver;
 //    String SAUCE_URL = "https://ondemand.us-west-1.saucelabs.com:443/wd/hub";
